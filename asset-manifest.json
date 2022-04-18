@@ -1,9 +1,9 @@
 {
   "files": {
     "main.css": "/CorralonRacca/static/css/main.5aa54b13.css",
-    "main.js": "/CorralonRacca/static/js/main.b5642d59.js",
+    "main.js": "/CorralonRacca/static/js/main.e305d4cb.js",
     "static/css/320.64457a24.chunk.css": "/CorralonRacca/static/css/320.64457a24.chunk.css",
-    "static/js/320.cdd17fc0.chunk.js": "/CorralonRacca/static/js/320.cdd17fc0.chunk.js",
+    "static/js/320.dd3562c6.chunk.js": "/CorralonRacca/static/js/320.dd3562c6.chunk.js",
     "static/css/215.6eb593b6.chunk.css": "/CorralonRacca/static/css/215.6eb593b6.chunk.css",
     "static/js/215.7854eb0f.chunk.js": "/CorralonRacca/static/js/215.7854eb0f.chunk.js",
     "static/css/685.57dec87b.chunk.css": "/CorralonRacca/static/css/685.57dec87b.chunk.css",
@@ -18,9 +18,9 @@
     "static/js/868.6242de09.chunk.js": "/CorralonRacca/static/js/868.6242de09.chunk.js",
     "index.html": "/CorralonRacca/index.html",
     "main.5aa54b13.css.map": "/CorralonRacca/static/css/main.5aa54b13.css.map",
-    "main.b5642d59.js.map": "/CorralonRacca/static/js/main.b5642d59.js.map",
+    "main.e305d4cb.js.map": "/CorralonRacca/static/js/main.e305d4cb.js.map",
     "320.64457a24.chunk.css.map": "/CorralonRacca/static/css/320.64457a24.chunk.css.map",
-    "320.cdd17fc0.chunk.js.map": "/CorralonRacca/static/js/320.cdd17fc0.chunk.js.map",
+    "320.dd3562c6.chunk.js.map": "/CorralonRacca/static/js/320.dd3562c6.chunk.js.map",
     "215.6eb593b6.chunk.css.map": "/CorralonRacca/static/css/215.6eb593b6.chunk.css.map",
     "215.7854eb0f.chunk.js.map": "/CorralonRacca/static/js/215.7854eb0f.chunk.js.map",
     "685.57dec87b.chunk.css.map": "/CorralonRacca/static/css/685.57dec87b.chunk.css.map",
@@ -36,6 +36,6 @@
   },
   "entrypoints": [
     "static/css/main.5aa54b13.css",
-    "static/js/main.b5642d59.js"
+    "static/js/main.e305d4cb.js"
   ]
 }
