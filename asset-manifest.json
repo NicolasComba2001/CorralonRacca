@@ -1,0 +1,41 @@
+{
+  "files": {
+    "main.css": "/CorralonRacca/static/css/main.5aa54b13.css",
+    "main.js": "/CorralonRacca/static/js/main.3850113c.js",
+    "static/css/320.64457a24.chunk.css": "/CorralonRacca/static/css/320.64457a24.chunk.css",
+    "static/js/320.972556fb.chunk.js": "/CorralonRacca/static/js/320.972556fb.chunk.js",
+    "static/css/215.6eb593b6.chunk.css": "/CorralonRacca/static/css/215.6eb593b6.chunk.css",
+    "static/js/215.f7dfb8f2.chunk.js": "/CorralonRacca/static/js/215.f7dfb8f2.chunk.js",
+    "static/css/685.57dec87b.chunk.css": "/CorralonRacca/static/css/685.57dec87b.chunk.css",
+    "static/js/685.011b5684.chunk.js": "/CorralonRacca/static/js/685.011b5684.chunk.js",
+    "static/css/496.454b581f.chunk.css": "/CorralonRacca/static/css/496.454b581f.chunk.css",
+    "static/js/496.ea986776.chunk.js": "/CorralonRacca/static/js/496.ea986776.chunk.js",
+    "static/css/133.789bd4d5.chunk.css": "/CorralonRacca/static/css/133.789bd4d5.chunk.css",
+    "static/js/133.5f045cf9.chunk.js": "/CorralonRacca/static/js/133.5f045cf9.chunk.js",
+    "static/js/787.4f4dac68.chunk.js": "/CorralonRacca/static/js/787.4f4dac68.chunk.js",
+    "static/js/682.211a0f80.chunk.js": "/CorralonRacca/static/js/682.211a0f80.chunk.js",
+    "static/js/954.c6fcecb7.chunk.js": "/CorralonRacca/static/js/954.c6fcecb7.chunk.js",
+    "static/js/868.6242de09.chunk.js": "/CorralonRacca/static/js/868.6242de09.chunk.js",
+    "index.html": "/CorralonRacca/index.html",
+    "main.5aa54b13.css.map": "/CorralonRacca/static/css/main.5aa54b13.css.map",
+    "main.3850113c.js.map": "/CorralonRacca/static/js/main.3850113c.js.map",
+    "320.64457a24.chunk.css.map": "/CorralonRacca/static/css/320.64457a24.chunk.css.map",
+    "320.972556fb.chunk.js.map": "/CorralonRacca/static/js/320.972556fb.chunk.js.map",
+    "215.6eb593b6.chunk.css.map": "/CorralonRacca/static/css/215.6eb593b6.chunk.css.map",
+    "215.f7dfb8f2.chunk.js.map": "/CorralonRacca/static/js/215.f7dfb8f2.chunk.js.map",
+    "685.57dec87b.chunk.css.map": "/CorralonRacca/static/css/685.57dec87b.chunk.css.map",
+    "685.011b5684.chunk.js.map": "/CorralonRacca/static/js/685.011b5684.chunk.js.map",
+    "496.454b581f.chunk.css.map": "/CorralonRacca/static/css/496.454b581f.chunk.css.map",
+    "496.ea986776.chunk.js.map": "/CorralonRacca/static/js/496.ea986776.chunk.js.map",
+    "133.789bd4d5.chunk.css.map": "/CorralonRacca/static/css/133.789bd4d5.chunk.css.map",
+    "133.5f045cf9.chunk.js.map": "/CorralonRacca/static/js/133.5f045cf9.chunk.js.map",
+    "787.4f4dac68.chunk.js.map": "/CorralonRacca/static/js/787.4f4dac68.chunk.js.map",
+    "682.211a0f80.chunk.js.map": "/CorralonRacca/static/js/682.211a0f80.chunk.js.map",
+    "954.c6fcecb7.chunk.js.map": "/CorralonRacca/static/js/954.c6fcecb7.chunk.js.map",
+    "868.6242de09.chunk.js.map": "/CorralonRacca/static/js/868.6242de09.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.5aa54b13.css",
+    "static/js/main.3850113c.js"
+  ]
+}
