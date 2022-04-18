@@ -1,0 +1,150 @@
+body::-webkit-scrollbar{width: 6px;}
+body::-webkit-scrollbar-thumb{
+    background-color: green;
+    border-radius:10px ;
+    -webkit-border-radius:10px ;
+    -moz-border-radius:10px ;
+    -ms-border-radius:10px ;
+    -o-border-radius:10px ;
+}
+@mixin caja-flex($justify, $align, $direction) {
+    display: flex;
+    justify-content: $justify;
+    align-items: $align;
+    flex-direction: $direction;
+}
+.ventajas{
+    display: flex;
+    align-items: center;
+    margin-top: 40px;
+    padding: 10px;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.644);
+    color: white;
+    justify-content: center;
+    .iconosVentajas{
+        &:hover{
+            color: rgb(15, 177, 15);
+        }
+        user-select: none;
+        width:  80%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        
+    }
+}
+.iconosVentajas__img{
+    font-size: 1.5em;
+    margin: 10px 0;
+}
+.SeccionHome{
+   height: 100vh;
+   width: 100%;
+   position: relative;
+   @include caja-flex(center,center ,column);
+   img{
+       filter: drop-shadow(0 0 black);
+       width: 100%;
+       height: 100%;
+       object-fit: cover;
+       -webkit-filter: drop-shadow(0 0 black);
+}
+}
+.contenedorHomeInfo{
+    @include caja-flex(center,center ,column);
+    width: 100%;
+    text-align: center;
+    position: absolute;
+}
+.SeccionHomeImg{
+    width: 80px;
+    height: 80px;
+    &__imagen{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 50%;
+            -webkit-border-radius: 50%;
+            -moz-border-radius: 50%;
+            -ms-border-radius: 50%;
+            -o-border-radius: 50%;
+    }
+}
+.SeccionHomeTitulo{
+    font-size: 2.5em;
+    margin: 0;
+    color: white;
+}
+.SeccionHomeTexto__parrafo{
+    color: white;
+    font-size: 1.2em;
+
+}
+
+//MEDIAS QUERIS PARA SECCION HOME
+@media screen and(min-width: 760px){
+    .ventajas{
+        width: 90%;
+        margin: 20px auto;
+        border-radius: 10px;
+        -webkit-border-radius: 10px;
+        -moz-border-radius: 10px;
+        -ms-border-radius: 10px;
+        -o-border-radius: 10px;
+}
+    .SeccionHomeTexto__parrafo{
+        font-size: 1.5em;
+        width: 80%;
+        margin: auto;
+        line-height: 1.5;
+    }
+    .SeccionHomeTitulo{
+        font-size: 3em;
+    }
+}
+@media screen and(min-width: 900px){
+    .SeccionHomeImg{
+        width: 90px;
+        height: 90px;
+    }
+    .SeccionHomeTexto__parrafo{
+        font-size: 2em;
+        width: 80%;
+        margin: auto;
+        line-height: 1.5;
+    }
+    .SeccionHomeTitulo{
+        font-size: 3.5em;
+    }
+}
+@media screen and(min-width: 1024px){
+    .HomeLogo{
+        width: 40px;
+        height: 40px;
+    }
+    .SeccionHomeTexto__parrafo{
+        font-size: 1.5em;
+        width: 80%;
+        margin: 20px auto;
+        line-height: 1.5;
+
+    }
+    .SeccionHomeTitulo{
+        font-size: 2.5em;
+    }
+}
+
+@media screen and(min-width: 1280px){
+    .ventajas{
+        width: 60%;
+    }
+    .SeccionHomeTitulo{
+        font-size: 6em;
+    }
+    .SeccionHomeTexto__parrafo{
+        font-size: 2em;
+        width: 50%;
+    }
+}

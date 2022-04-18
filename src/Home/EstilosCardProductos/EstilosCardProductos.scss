@@ -1,0 +1,298 @@
+.seccionEmpresaProductos{
+    border-top: 2px solid green;
+}
+.InfoEmpresa__parrafo{
+    margin-bottom: 20px;
+}
+.infoNuestraEmpresa{
+    padding: 10px;
+    &__titulo{
+        font-size: 1.4em;
+        margin-bottom: 20px;
+    }
+}
+.InfoEmpresa{
+    padding: 10px;
+    &__titulo{
+        line-height: 2;
+        font-size: 1.1em;
+        font-weight: 800;
+    }
+}
+.productosyboton{
+    border-radius: 10px;
+    padding: 20px;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(38, 219, 38, 0.76);
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+.contBotonesempresa{
+    display: flex;
+    margin-top: 20px;
+}
+.InfoEmpresa__btn{
+    color: #fff;
+    font-weight: 600;
+    text-decoration: none;
+    text-align: center;
+    display: block;
+    width: 170px;
+    padding: 15px;
+    border: none;
+    background-color: rgba(0, 0, 0, 0.911);
+    margin: 0 10px;
+    border-radius:10px ;
+    -webkit-border-radius:10px ;
+    -moz-border-radius:10px ;
+    -ms-border-radius:10px ;
+    -o-border-radius:10px ;
+    z-index: 5;
+    outline: none;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+
+    &::after{
+        content: "";
+        position: absolute;
+        display: block;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        background-color: transparent;
+        z-index: -1;
+        top: 50%;
+        height: 30%;
+        background-color: #ffffff;
+        transform: rotate(45deg) translateY(650%);
+        transition: background-color 0.4s;
+    }
+    &:hover::after{
+        transition: background-color .4s, transform .6s;
+        transform: rotate(45deg) translateY(-700%);
+    }
+    &:hover{
+        background-color: rgba(0, 0, 0, 0.548);
+        transform: translateY(-2px);
+        -webkit-transform: translateY(-2px);
+        -moz-transform: translateY(-2px);
+        -ms-transform: translateY(-2px);
+        -o-transform: translateY(-2px);
+        box-shadow: 0 8px 8px 2px rgba(0, 128, 0, 0.596);
+        transition: transform .5s ease-in-out;
+        -webkit-transition: transform .5s ease-in-out;
+        -moz-transition: transform .5s ease-in-out;
+        -ms-transition: transform .5s ease-in-out;
+        -o-transition: transform .5s ease-in-out;
+}
+}
+.CardsProductos{
+    width: 100%;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.cardBotones{
+    width: 100%;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    &__btn{
+        width:30px;
+        cursor: pointer;
+        background-color: rgb(255, 255, 255);
+        border-radius: 100%;
+        -webkit-border-radius: 100%;
+        -moz-border-radius: 100%;
+        -ms-border-radius: 100%;
+        -o-border-radius: 100%;
+               border: none;
+        font-size: 1.5em;
+        &:hover:nth-child(2)
+{
+            transform: scale(1.1) translateX(5px);
+            -webkit-transform: scale(1.1) translateX(5px);
+            -moz-transform: scale(1.1) translateX(5px);
+            -ms-transform: scale(1.1) translateX(5px);
+            -o-transform: scale(1.1) translateX(5px);
+            transition: transform .6s ease-in-out;
+            -webkit-transition: transform .6s ease-in-out;
+            -moz-transition: transform .6s ease-in-out;
+            -ms-transition: transform .6s ease-in-out;
+            -o-transition: transform .6s ease-in-out;
+}
+        &:hover:nth-child(1){
+            transform: scale(1.1) translateX(-5px);
+            -webkit-transform: scale(1.1) translateX(-5px);
+            -moz-transform: scale(1.1) translateX(-5px);
+            -ms-transform: scale(1.1) translateX(-5px);
+            -o-transform: scale(1.1) translateX(-5px);
+            transition: transform .6s ease-in-out;
+            -webkit-transition: transform .6s ease-in-out;
+            -moz-transition: transform .6s ease-in-out;
+            -ms-transition: transform .6s ease-in-out;
+            -o-transition: transform .6s ease-in-out;
+}
+    }
+    &__btn:nth-child(1){
+        margin-left: 10px;
+        transition: transform .6s ease-in-out;
+    -webkit-transition: transform .6s ease-in-out;
+    -moz-transition: transform .6s ease-in-out;
+    -ms-transition: transform .6s ease-in-out;
+    -o-transition: transform .6s ease-in-out;
+    }
+    &__btn:nth-child(2){
+        margin-right: 10px;
+        transition: transform .6s ease-in-out;
+    -webkit-transition: transform .6s ease-in-out;
+    -moz-transition: transform .6s ease-in-out;
+    -ms-transition: transform .6s ease-in-out;
+    -o-transition: transform .6s ease-in-out;
+    }
+
+   
+}
+.verProductos{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    &__btn{
+        z-index: 5;
+        background-color: transparent;
+        position: relative;
+        border: none;
+        outline: none;
+        cursor: pointer;
+        text-decoration: none;
+        color: black;
+        overflow: hidden;
+        padding: 10px;
+        font-size: 1.2em;
+        transition: .5s ease-out;
+        -webkit-transition: .5s ease-out;
+        -moz-transition: .5s ease-out;
+        -ms-transition: .5s ease-out;
+        -o-transition: .5s ease-out;
+        border-bottom: 2px solid rgb(255, 255, 255);
+    &::after,&::before{
+        content: "";
+        position: absolute;
+        display: block;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        background-color: #000000;
+        transition: transform .6s linear;
+        z-index: -1;
+        }
+    &::before{ transform: rotateY(90deg); -webkit-transform: rotateY(90deg); -moz-transform: rotateY(90deg); -ms-transform: rotateY(90deg); -o-transform: rotateY(90deg); }
+    &::after{ transform:rotateX(90deg); -webkit-transform:rotateX(90deg); -moz-transform:rotateX(90deg); -ms-transform:rotateX(90deg); -o-transform:rotateX(90deg); }
+    &:hover{color: rgb(255, 249, 249); border-bottom: 2px solid transparent; transition: color .5s ease-out;
+        -webkit-transition: color .5s ease-out;
+        -moz-transition: color .5s ease-out;
+        -ms-transition: color .5s ease-out;
+        -o-transition: color .5s ease-out;}
+    &:hover::before,&:hover::after{
+        transform: rotate(0);
+        -webkit-transform: rotate(0);
+        -moz-transform: rotate(0);
+        -ms-transform: rotate(0);
+        -o-transform: rotate(0);
+        }
+    }
+}
+
+
+//MEDIAS QUERIS
+
+@media screen and(min-width: 760px){
+    .infoNuestraEmpresa{
+        margin: 25px 0;
+    }
+    .infoNuestraEmpresa__titulo{
+        font-size: 2em;
+    }
+    .InfoEmpresa{
+        width: 80%;
+        margin: auto;
+    }
+    .InfoEmpresa__titulo{
+        font-size: 1.5em;
+    }
+    .InfoEmpresa__parrafo{
+        font-size: 1.2em;
+    }
+    .cardBotones__btn:nth-child(1){
+        margin-left: 90px;
+    }.cardBotones__btn:nth-child(2){
+        margin-right: 90px;
+    }
+}
+@media screen and(min-width: 910px){
+    .cardBotones__btn:nth-child(1){
+        margin-left: 10px;
+    }.cardBotones__btn:nth-child(2){
+        margin-right: 10px;
+    }
+    .seccionEmpresaProductos{
+       height: 650px;
+        display: flex;
+    }
+    .infoNuestraEmpresa{
+        width: 50%;
+        align-self: flex-start;
+    }
+    .productosyboton{
+        align-self: flex-end;
+        margin-right: 20px;
+        width: 45%;
+    }
+}
+
+@media screen and(min-width: 1024px){
+    .InfoEmpresa__titulo{
+        font-size: 1.2em;
+    }
+    .InfoEmpresa__parrafo{
+        font-size: 1em;
+        line-height: 1.5;
+    }
+}
+
+
+@media screen and(min-width: 1300px){
+   
+    .seccionEmpresaProductos{
+        height: 750px;
+    }
+    .infoNuestraEmpresa{
+        padding: 45px;
+    }
+    .infoNuestraEmpresa__titulo{
+        font-size: 5.2em;
+    }
+    .InfoEmpresa__titulo{
+        font-size: 2.4em;
+    }
+    .InfoEmpresa__parrafo{
+        font-size: 1.15em;
+        line-height: 1.5;
+    }
+}

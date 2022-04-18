@@ -1,0 +1,451 @@
+$colorBackgroundMenu:linear-gradient(to right, #56ab2f, #a8e063);
+
+@mixin caja-flex($justify, $align, $direction) {
+    display: flex;
+    justify-content: $justify;
+    align-items: $align;
+    flex-direction: $direction;
+}
+.scrolldown{
+    position: absolute;
+    bottom: 5%;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    font-size: 1.3em;
+    cursor: pointer;
+    color: white;
+    &:hover{
+        color: rgb(255, 1, 1);
+    }
+    &:hover &__texto{
+        animation: scrolldown 1.2s linear infinite;
+            -webkit-animation: scrolldown 1.2s linear infinite;
+    }
+    &__texto{
+        margin-left: 10px;
+
+    }
+}
+@keyframes scrolldown {
+    0%{
+        transform: translateY(0 );
+        -webkit-transform: translateY(0 );
+        -moz-transform: translateY(0 );
+        -ms-transform: translateY(0 );
+        -o-transform: translateY(0 );
+}50%{
+    transform: translateY(10px);
+    -webkit-transform: translateY(10px);
+    -moz-transform: translateY(10px);
+    -ms-transform: translateY(10px);
+    -o-transform: translateY(10px);
+}
+}
+.seccionHomeMenu{
+    z-index: 30;
+    position: absolute;
+    top: 0%;
+    height: 80px;
+    left: 0;
+    width: 100%;
+    @include caja-flex(space-between, center,row );
+}
+//efecto OPEN menu icono
+.HomeMenuBtn{
+    z-index: 10;
+    position: relative;
+    @include caja-flex(center, center,column );
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    transition: all 0.5s ease-in-out;
+    margin-right: 20px;
+}
+.HomeMenuBtn__line{
+    width: 100%;
+    height: 4px;
+    background-color: rgb(27, 179, 7);
+    border-radius: 5px;
+    transition: all .5s ease-in-out;
+}
+.HomeMenuBtn__line::before,
+.HomeMenuBtn__line::after{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 4px;
+    background-color: rgb(27, 179, 7);
+    border-radius: 5px;transition: all .5s ease-in-out;
+}
+.HomeMenuBtn__line::before{
+    transform: translateY(-13px);
+    -webkit-transform: translateY(-13px);
+    -moz-transform: translateY(-13px);
+    -ms-transform: translateY(-13px);
+    -o-transform: translateY(-13px);
+}
+.HomeMenuBtn__line::after{
+    transform: translateY(13px);
+    -webkit-transform: translateY(13px);
+    -moz-transform: translateY(13px);
+    -ms-transform: translateY(13px);
+    -o-transform: translateY(13px);
+}
+.HomeMenuBtn.open .HomeMenuBtn__line{
+    transform: translateX(-50px);
+    background: transparent;
+}
+.HomeMenuBtn.open .HomeMenuBtn__line::before{
+    transform: rotate(45deg) translate(35px, -35px);
+}.HomeMenuBtn.open .HomeMenuBtn__line::after{
+    transform: rotate(-45deg) translate(35px, 35px);
+}
+//fin efecto menu icono
+
+.HomeMenu{
+    height: 65px;
+    @include caja-flex(space-between,center ,row);
+}
+.HomeLogo{
+    width: 40px;
+    height: 40px;
+    margin-left: 20px;
+    cursor: pointer;
+    z-index: 10;
+    img{
+        border-radius: 10px;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        -webkit-border-radius: 10px;
+        -moz-border-radius: 10px;
+        -ms-border-radius: 10px;
+        -o-border-radius: 10px;
+}
+}
+.navMenu{
+    transition: transform 1s ease-in;
+    -webkit-transition: transform 1s ease-in;
+    -moz-transition: transform 1s ease-in;
+    -ms-transition: transform 1s ease-in;
+    -o-transition: transform 1s ease-in;
+    transform: translateX(-100%);
+    -webkit-transform: translateX(-100%);
+    -moz-transform: translateX(-100%);
+    -ms-transform: translateX(-100%);
+    -o-transform: translateX(-100%);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    background: $colorBackgroundMenu;
+    &__titulo{
+            font-size: 1.2em;
+            color: #ffff;
+            text-align: center;
+            font-weight: 700;
+            text-decoration: underline;
+            margin-top: 10px;
+        }
+}
+.abrirMenu{
+    transition: transform .5s ease-in;
+    transform: translateX(0);
+    -webkit-transform: translateX(0);
+    -moz-transform: translateX(0);
+    -ms-transform: translateX(0);
+    -o-transform: translateX(0);
+    -webkit-transition: transform .5s ease-in;
+    -moz-transition: transform .5s ease-in;
+    -ms-transition: transform .5s ease-in;
+    -o-transition: transform .5s ease-in;
+}
+.botonesSeccion{
+    @include caja-flex(center,center,column);
+    position: fixed;
+    right: 10%;
+    top: 45%;
+    transform: translate(50%,45%);
+    -webkit-transform: translate(50%,45%);
+    -moz-transform: translate(50%,45%);
+    -ms-transform: translate(50%,45%);
+    -o-transform: translate(50%,45%);
+    z-index: 100;
+    opacity: 0;
+    &__btn
+{
+            background-color: transparent;
+            border: none;
+            font-size: 2.2em;
+            margin: 15px 0;
+            color: rgba(51, 51, 51, 0.76);
+            transition: transform .7s ease ;
+            cursor: pointer;
+            &:nth-child(1):hover{
+                transition: transform .7s ease ;
+                transform: translateY(-3px);
+                -webkit-transform: translateY(-3px);
+                -moz-transform: translateY(-3px);
+                -ms-transform: translateY(-3px);
+                -o-transform: translateY(-3px);
+                -webkit-transition: transform .7s ease ;
+                -moz-transition: transform .7s ease ;
+                -ms-transition: transform .7s ease ;
+                -o-transition: transform .7s ease ;
+}
+            &:nth-child(2):hover{
+                transition: transform .7s ease;
+                transform: translateY(3px);
+                -webkit-transform: translateY(3px);
+                -moz-transform: translateY(3px);
+                -ms-transform: translateY(3px);
+                -o-transform: translateY(3px);
+                -webkit-transition: transform .7s ease;
+                -moz-transition: transform .7s ease;
+                -ms-transition: transform .7s ease;
+                -o-transition: transform .7s ease;
+}   
+        }
+}
+.mostrarBtnMenu{
+   opacity: 1;
+   transition: opacity 3s ease;
+   -webkit-transition: opacity 3s ease;
+   -moz-transition: opacity 3s ease;
+   -ms-transition: opacity 3s ease;
+   -o-transition: opacity 3s ease;
+}
+.TabsBtn{
+    display: none;
+}
+.TabsContenedor{
+    overflow: auto;
+    height: 100vh;
+    transform: translateY(200%);
+    -webkit-transform: translateY(200%);
+    -moz-transform: translateY(200%);
+    -ms-transform: translateY(200%);
+    -o-transform: translateY(200%);
+    transition: transform .5s ease-in;
+}
+.subirItemsMenu{
+    transition: transform 1.2s ease-in-out;
+    transform: translateY(0);
+    -webkit-transform: translateY(0);
+    -moz-transform: translateY(0);
+    -ms-transform: translateY(0);
+    -o-transform: translateY(0);
+    -webkit-transition: transform 1.2s ease-in-out;
+    -moz-transition: transform 1.2s ease-in-out;
+    -ms-transition: transform 1.2s ease-in-out;
+    -o-transition: transform 1.2s ease-in-out;
+}
+
+.TabsInformacion{
+    height: inherit;
+    @include caja-flex(center,flex-start,column);
+    overflow: hidden;
+    &__titulo{
+            font-size: 2.3em;
+            font-weight: 800;
+            color: rgba(34, 34, 34, 0.692);
+            margin-left: 5px;
+            display: block;
+        text-decoration: underline;
+        color: transparent;
+        position: relative;
+        white-space: nowrap;
+        cursor: pointer;
+        letter-spacing: 2px;
+        -webkit-text-stroke: 1px rgba(255,255,255,.5);
+        &::before{
+            content: attr(data-text);
+            position: absolute;
+            color: rgb(0, 0, 0);
+            width: 0;
+            overflow: hidden;
+            transition: 1s;
+            -webkit-transition: 1s;
+            -moz-transition: 1s;
+            -ms-transition: 1s;
+            -o-transition: 1s;
+    }
+        &:hover::before{
+            width: 100%;
+            filter: drop-shadow(0 0 20px rgb(255, 255, 255));
+            -webkit-filter: drop-shadow(0 0 20px rgb(255, 255, 255));
+        }
+    }
+}
+.TabsItems{
+    list-style: none;
+    padding: 5px;
+    &__titulo{
+        display: block;
+        text-decoration: none;
+        color: transparent;
+        position: relative;
+        background-color: transparent;
+        border: none;
+        white-space: nowrap;
+        font-size: 1.18em;
+        margin: 15px 0 ;
+        cursor: pointer;
+        letter-spacing: 2px;
+        -webkit-text-stroke: 1px rgba(255,255,255,.5);
+            &::before{
+            content: attr(data-text);
+            position: absolute;
+            color: white;
+            width: 0;
+            overflow: hidden;
+            transition: 1s;
+            -webkit-transition: 1s;
+            -moz-transition: 1s;
+            -ms-transition: 1s;
+            -o-transition: 1s;
+}
+        &:hover::before{
+            width: 100%;
+            filter: drop-shadow(0 0 25px white);
+            -webkit-filter: drop-shadow(0 0 25px white);
+        }
+        
+    }
+}
+
+//MEDIAS QUERIS MENU
+@media screen and (min-width: 760px){
+    .navMenu__titulo{
+        font-size: 2em;
+    }
+    .botonesSeccion__btn{
+        font-size: 2.5em;
+    }
+    .TabsInformacion{
+        padding: 10px;
+    }
+    .TabsInformacion__titulo{
+        font-size: 3.2em;
+    }
+    .TabsItems__titulo{
+        font-size: 2.2em;
+    }
+    
+}
+@media screen and (min-width: 900px){
+    .seccionHomeMenu{
+        height: 100px;
+    }
+    .navMenu__titulo{
+        font-size: 2.5em;
+    }
+    .botonesSeccion__btn{
+        font-size: 4em;
+    }
+    .TabsInformacion{
+        padding: 10px;
+    }
+    .TabsInformacion__titulo{
+        font-size: 3.5em;
+    }
+    .TabsItems__titulo{
+        font-size: 3em;
+    }
+    .HomeMenuBtn{
+        width: 60px;
+        height: 60px;
+    }
+    .HomeMenuBtn__line::before, .HomeMenuBtn__line::after,.HomeMenuBtn__line{
+        height: 6px;
+    }
+    .HomeLogo{
+        width: 80px;
+        height: 80px;
+    }
+}
+
+@media screen and(min-width: 1300px) {
+    .TabsInformacion__titulo{
+        font-size: 6em;
+        color: rgba(34, 34, 34, 0.492);
+    }
+    .navMenu{
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        width: 100%;
+    }
+    .TabsInformacion{
+        margin-left: 85px;
+    }
+    .TabsContenedor{
+        display: flex;
+        height: 100vh;
+        align-items: center ;
+    }
+    .navMenu__titulo{
+        font-size: 1em;
+        margin: 0;
+        display: none;
+    }
+    .TabsItems__titulo{
+        font-size: 2.4em;
+    }
+    .botonesSeccion {
+        flex-direction: row;
+        bottom: 10%;
+        right: 50%;
+    }
+    .botonesSeccion__btn{
+        font-size: 3em;
+        margin: 15px 15px;
+    }
+    .HomeLogo{
+        height: 40px;
+        width: 40px;
+        
+    }
+    .TabsBtn{
+       display: flex;
+       width: 10%;
+       align-items: center;
+       justify-content: space-around;
+       flex-direction: column-reverse;
+       transform: rotate(-180deg);
+       -webkit-transform: rotate(-180deg);
+       -moz-transform: rotate(-180deg);
+       -ms-transform: rotate(-180deg);
+       -o-transform: rotate(-180deg);
+       background-color: #ffff;
+       height: 100vh;
+       .TabsBtn__botones{
+        border: none;
+        color: rgba(0, 0, 0, 0.308);
+        font-weight: 800;
+        padding: 10px;
+        text-align: center;
+        transform: rotate(90deg);
+        -webkit-transform: rotate(90deg);
+        -moz-transform: rotate(90deg);
+        -ms-transform: rotate(90deg);
+        -o-transform: rotate(90deg);
+        background-color: unset;
+        border-bottom: 2px solid transparent;
+        cursor: pointer;
+        &:hover,&:focus{
+            color:rgba(0, 0, 0, 0.808);
+             border-bottom: 2px solid green;
+        }
+        }
+    }
+}
+
+.TabsBtn__botones.activeSeccion{
+    color:rgba(0, 0, 0, 0.808);
+    border-bottom: 2px solid green;
+}

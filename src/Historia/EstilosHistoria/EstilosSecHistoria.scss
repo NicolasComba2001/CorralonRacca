@@ -1,0 +1,52 @@
+
+.seccionHistoriaRacca{position: relative;}
+.btnUpHistoria,.btnVolver{
+    position: fixed;
+    right: 5%;
+    bottom: 5%;
+    background-color: rgba(0, 0, 0, 0.808);
+    border-radius: 100%;
+    border: none;
+    color: greenyellow;
+    font-size: 1.2em;
+    text-decoration: none;
+    width: 50px;
+    height: 50px;
+    z-index: 10;
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    -ms-border-radius: 100%;
+    -o-border-radius: 100%;
+    cursor: pointer;
+    transition: .5s ease;
+        -webkit-transition: .5s ease;
+        -moz-transition: .5s ease;
+        -ms-transition: .5s ease;
+        -o-transition: .5s ease;
+    &:hover{
+        background-color: white;
+        color: black;
+        transition: .5s ease;
+        -webkit-transition: .5s ease;
+        -moz-transition: .5s ease;
+        -ms-transition: .5s ease;
+        -o-transition: .5s ease;
+    }   
+}
+.btnVolver{
+    position: absolute;
+    width: 80px;
+    padding: 5px;
+    height: 40px;
+    border-radius: 10px;
+    top: .5%;
+    left: 2%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    
+}

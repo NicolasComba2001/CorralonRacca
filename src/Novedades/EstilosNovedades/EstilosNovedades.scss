@@ -1,0 +1,219 @@
+body::-webkit-scrollbar{
+    width: 6px;
+}
+body::-webkit-scrollbar-thumb{
+    background-color: green;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+.seccionNovedades{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    background-color: black;
+}
+.titulosNovedades{
+    width: 100%;
+    margin-top: 40px;
+    margin-left: 10px;
+    &__titulos{
+        font-size: 2.3em;
+        color: white;
+        font-weight: 800;
+        text-align: center;
+        margin-bottom: 10px;
+        &--green{
+            color: green;
+            text-decoration: underline  ;
+        }
+    }
+    &__titulos:nth-child(2){
+        font-weight: 400;
+        color: white;
+        line-height: 1.5;
+        font-size: 1.2em;
+        margin-top: 50px;
+    }
+}
+.contenedorNovRedes{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.iconRedes{
+    width: 40px;
+    border-radius: 100%;
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    -ms-border-radius: 100%;
+    -o-border-radius: 100%;
+    margin: 30px;
+    &:hover{
+        box-shadow: 0 0 5px 1px white;
+    }
+    height: 40px;
+    
+    &__ico{
+        background-color: white;
+        border-radius: 100%;
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    -ms-border-radius: 100%;
+    -o-border-radius: 100%;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        
+    }
+}
+.volverHome{
+    position: absolute;
+    top: .5%;
+    left: 2%;
+    background-color: white;
+    color: black;
+    z-index: 30;
+    text-decoration: none;
+    width: 60px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    &:hover{
+        background-color: green;
+        color: white;
+    }
+}
+
+.mostrarNovedad{
+    padding: 10px;
+    width: 100%;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    &__titulo{
+        font-size: 1.5em;
+        color: white;
+    }
+    &__fecha{
+        color: white;
+        width: 100%;
+        text-decoration: underline;
+        text-align: left;
+    }
+    &__descripcion{
+        margin-top: 10px;
+        white-space: pre-line;
+        color: white;
+        line-height: 1.7;
+        font-size: 1.1em;
+        width: 100%;
+    }
+}
+.novedadMostradaImagen{
+    width: 100%;
+    margin: 20px 0 ;
+    height: 300px;
+    &__img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+}
+
+
+@media screen and(min-width: 768px) {
+    
+    .novedadMostradaImagen,.contenedorInfoImgMostrada{
+        width: 85%;
+    }
+    .titulosNovedades__titulos{
+        font-size: 3.5em;
+    }
+    .contRedes{
+        justify-content: flex-start;
+    }
+    .seccionNovedades{height: 100vh;}
+}
+@media screen and(min-width: 820px) {
+    .volverHome{
+        top: 5%;
+    }
+}
+@media screen and(min-width: 1024px){
+    .contenedorInfoImgMostrada{
+        width: 90%;
+        padding: 10px;
+        height: 500px;
+        overflow: scroll;
+    }
+    .contenedorInfoImgMostrada::-webkit-scrollbar{width: 6px;}
+    .contenedorInfoImgMostrada::-webkit-scrollbar-thumb{
+    background-color: rgb(255, 255, 255);
+    border-radius:10px ;
+    -webkit-border-radius:10px ;
+    -moz-border-radius:10px ;
+    -ms-border-radius:10px ;
+    -o-border-radius:10px ;
+}
+    .mostrarNovedad{
+        flex-direction: row;
+    }
+    
+    .novedadMostradaImagen{
+        width: 100%;
+    }
+    .mostrarNovedad__titulo{
+        font-size: 2.2em;
+    }
+    .novedadMostradaImagen{
+        height: 500px;
+    }
+    .seccionNovedades{
+        flex-direction: row;
+    }
+    .titulosNovedades{
+        padding: 10px;
+        width: 85%;
+    }
+
+    .titulosNovedades__titulos{
+        text-align: left;
+    }
+}
+
+@media screen and(min-width: 1280px){
+    
+    
+    .titulosNovedades__titulos{
+        font-size: 5.5em;
+    }
+    .iconRedes{
+        width: 40px;
+        height: 40px;
+    }
+}
+
+@media screen and(min-width: 1300px){
+    
+    .titulosNovedades__titulos{
+        font-size: 7em;
+    }
+    .titulosNovedades__titulos:nth-child(2){
+        width: 80%;
+        
+    }
+}
